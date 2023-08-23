@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="heder-text">
+                <p>Software Developer</p>
+                <h1>Hello, I'm <span>Aman Jaiswal</span></h1>
+
+            </div>
+
+            <a href="Images/Aman Jaiswal Developer resume (4).pdf" download class="btn btn2"> <i
+                    class="fa-solid fa-download"></i> Download CV</a>
+            <a href="https://github.com/AmanJaiswal121" class="btn btn2"><i class="fa-brands fa-github"></i> Visit
+                GitHub</a>
+
+        </div>
+    </div>
+
+    <!-- ----------About--------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/About3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-align: justify; color: gray;">Hello there, I'm Aman Jaiswal, a dedicated and aspiring
+                        individual
+                        currently pursuing B.Tech in
+                        Computer Science. At LNCT University, I am immersing myself in the dynamic world of computer
+                        science.
+                        Beyond academics, I channel my enthusiasm into hands-on projects that not only deepen my
+                        understanding but also allow me to apply theoretical knowledge to practical situations. My
+                        ultimate goal is to become a skilled and innovative software developer.
+                        I look forward to the opportunities that lie ahead and the chance to make a positive impact in
+                        the world of software development.</p>
+
+                    <div class="tab-titals">
+                        <p style="color: rgb(171, 166, 201);" class="tab-links active-link" onclick="opentab('skills')">
+                            Skills</p>
+                        <p style="color: rgb(171, 166, 201);" class="tab-links" onclick="opentab('learning')">Learing
+                        </p>
+                        <p style="color: rgb(171, 166, 201);" class="tab-links" onclick="opentab('education')">Education
+                        </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core Java & JDBC</span><br>Software development and Java Database Connectivity
+                            </li>
+                            <li><span>MySQL</span><br>RDBMS for data management and software development</li>
+                            <li><span>GitHub</span><br>Version control and collaborative software development</li>
+                            <li><span>Web Development</span><br>Creating, building, and maintaining websites and web applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="learning">
+                        <ul>
+                            <li><span>Operating Syatem</span><br>Memory Management, User Interface, Process Management
+                            </li>
+                            <li><span>Computer Network</span><br>Types of Networks, Network Topologies, Networking
+                                Protocols</li>
+                            <li><span>Software engineering</span><br>SDLC models, SRS documentaion, Software Design</li>
+                            <li><span>Data Structure</span><br>To organize, store, and manipulate data efficiently</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Class 10<sub>th</sub></span><br>- 2018 pass out with 67% from Beacon English
+                                School,
+                                Korba (Chhatisgarh)</li>
+                            <li><span>Class 12<sub>th</sub></span><br>- 2020 pass out with 71% from St. Xavier Public
+                                School,
+                                Korba (Chhattigarh)</li>
+                            <li><span>B.tech</span><br>- From LNCT University with 8.73 CGPA</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Services---------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Business Analyst</h2>
+                    <p>Analyzing business processes, identifying opportunities for
+                        improvement, and facilitating
+                        the development of technology solutions to meet business needs.</p>
+                    <a href="BA.html">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-window-restore"></i>
+                    <h2>Software Development</h2>
+                    <p>Design and create software applications, systems, and features using programming languages and
+                        development frameworks.</p>
+                    <a href="SD.html">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coding and Implementation</h2>
+                    <p>Write code using programming languages and development tools, adhering to coding standards and
+                        best practices data structures and logic to implement the desired functionality.</p>
+                    <a href="coding&implementation.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Portfolio----------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Learning_img1.jpg">
+                    <div class="layer">
+                        <h3>Learning Website</h3>
+                        <p>A dynamic learning website, where knowledge meets innovation! Our platform is designed to
+                            empower learners of all backgrounds and ages to embark on a journey of discovery, growth,
+                            and mastery</p>
+                        <a href="https://amanjaiswal121.github.io/FUll_STACK/Btech_Learners.html"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/DS,png.jpg">
+                    <div class="layer">
+                        <h3>Data Structure</h3>
+                        <p>A comprehensive Data Structures tutorial, your gateway to mastering the fundamental building
+                            blocks of efficient software design and problem-solving</p>
+                        <a href="https://github.com/AmanJaiswal121/Linear-Data-Structure"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/portfolio.png">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>Welcome to my portfolio, a curated collection of my creative journey, achievements, and
+                            aspirations</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+
+        <!-- ----------Contact---------- -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i> amanjswl000@gmail.com</p>
+                        <p> <i class="fa-solid fa-square-phone"></i> 8839356479</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100013749524726"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/hey_aman_121/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aman-jaiswal-829aa1238/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/AmanJaiswal121"><i class="fa-brands fa-github"></i></a>
+                        </div>
+
+                        <a href="Images/Aman Jaiswal Developer resume (4).pdf" download class="btn btn2">Download CV</a>
+
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p style="color: aliceblue;">
+                    Copyright ©www.amanportfolio.com | All rights reserved
+                </p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzD7iARxCvNLu3x5DEajpgE6jWDUaQusphY28_dojzdXIWM7BfVx8PQXzAppiNBXy8L1w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+
+</body>
+
+</html>
